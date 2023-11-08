@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Noto+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+body {
+    font-family:'Noto Sans', sans-serif;
+    line-height: 1.7;
+    color: aliceblue;
+}
+
+/* a {
+    color: darkblue;
+    text-decoration: none;
+    font-weight: 500;
+} */
+
+.navbar {
+    width: 100%;
+    height: 78px;
+    background: white;
+}
+
+.menu-wrapper .navbar-brand {
+    width: 200px;
+}
+
+.top-nav {
+    background-color: #0B2050;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    height: 45px;
+}
+
+.top-nav p {
+    margin-bottom: 0;
+    display: inline-block;
+    margin-right: 16px;
+    color: white;
+}
+
+.top-nav i, .top-nav span {
+    vertical-align: middle;
+}
+
+.social-links {
+    color: white;
+    font-size: 11px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+}
+
+.social-links img {
+    margin: 5px;
+    width: 15px;
+    height: 15px;
+    color: white;
+    font-size: 15px;
+    border-radius: 20%;
+}
+
+.social-links a:hover {
+    background-color: white;
+}
+
+
+.navbar-brand {
+    font-weight: 700;
+    font-size: 26px;
+    color: darkblue;
+}
+
+.navbar-brand span {
+    color: salmon;
+}
+
+.menu-wrapper .nav-link {
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    color: #2E2E2E;
+}
+
+.menu-wrapper .nav-link:hover, 
+.menu-wrapper .nav-link:active {
+    color: rgb(0, 0, 0);
+}
+
+.menu-wrapper .active {
+    color: #DC0000 !important;
+}
+
+.carousel-indicators button {
+    width: 17px !important;
+    height: 10px !important;
+    border-top: unset !important;
+    border-bottom: unset !important;
+}
+
+.custom-indicator .active{
+    background: #DC0000 !important;
+}
+
+.carousel-head {
+    color: #DC0000 !important;
+    font-size: 48px;
+    font-weight: 700;
+    line-height: 57.60px;
+    word-wrap: break-word;
+}
+
+.carousel-caption {
+    font-size: 48px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    left: unset !important;
+}
+
+.carousel-caption p {
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30.60px;
+    word-wrap: break-word
+}
+
+.carousel-inner img {
+    background: linear-gradient(rgba(0,0,0,0.25)rgba(0,0,0,0.12));
+    width: 100%;
+    height: calc(100vh - 120px);
+}
+
+.features {
+    color: #2E2E2E;
+    padding: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.features h2 {
+    font-size: 48px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 600;
+}
+
+.features p {
+    display: flex;
+    color: #2E2E2E;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 27.20px;
+    word-wrap: break-word;
+    max-width: 530px;
+}
+
+.features-child {
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 22px;
+    flex-basis: 40%;
+    font-size: 16px;
+    word-wrap: break-word;
+    max-height: 364px;
+}
+
+.features-child-img {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.features-child-img img {
+    width: 492px;
+    height: 364px;
+}
+
+
+#services {
+    color: white;
+    background: linear-gradient(rgba(13, 120, 191, 0.911),rgba(11, 148, 239, 0.976)), url(/images/world\ map.png);
+    padding: 50px;
+}
+
+#services a {
+    color: white;
+}
+
+.custom-service {
+    padding: 30px;
+    text-align: center;
+    background-color: white;
+    color: black;
+    min-height: 340px;
+}
+
+.custom-service h4 {
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.service {
+    padding: 10px;
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.service h1 {
+    font-weight: 400;
+    text-align: center;
+}
+
+#services button {
+    color: red;
+}
+
+.partners {
+    padding: 70px;
+    text-align: left;
+}
+
+.partners h3 {
+    font-family: 'Noto Sans', sans-serif;
+    color: #2E2E2E;
+    font-size: 48px;
+    font-weight: 600;
+}
+
+.clients {
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.clients p {
+    color: #2E2E2E;
+    font-size: 15px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    line-height: 22.50px;
+}
+
+.client-logo {
+    padding-top: auto;
+    align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contact-us {
+    padding: 100px;
+    background: url(/images/contact\ us.png);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us .container {
+    max-width: 800px;
+    font-family:'Noto Sans', sans-serif;
+}
+
+.contact-us h2 {
+    padding: 24px;
+    font-weight: 500;
+    font-family: 'Noto Sans', sans-serif;
+    color: white;
+    display: flex;
+    justify-content: center;
+    font-size: 48px;
+}
+
+.col-6 {
+    margin-bottom: 20px;
+    height: 100%;
+    width: 100%;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.footer {
+    background: linear-gradient(rgba(13, 120, 191, 0.911),rgba(11, 148, 239, 0.976)), url(/images/world\ map.png) no-repeat center;
+    padding: 50px;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+
+.footer .col {
+    flex-basis: 25%;
+    flex-grow: 1;
+    margin-bottom: 20px;
+}
+
+.footer .col a {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.footer h5,h2 {
+    color: white;
+}

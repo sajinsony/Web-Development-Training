@@ -15,8 +15,22 @@ body {
     background: white;
 }
 
-.menu-wrapper .navbar-brand {
-    width: 200px;
+
+.menu-wrapper .nav-link {
+    font-size: 16px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 700;
+    word-wrap: break-word;
+    color: #2E2E2E;
+}
+
+.menu-wrapper .nav-link:hover, 
+.menu-wrapper .nav-link:active {
+    color: rgb(0, 0, 0);
+}
+
+.menu-wrapper .active {
+    color: #DC0000 !important;
 }
 
 .top-nav {
@@ -49,12 +63,7 @@ body {
 
 .social-links img {
     margin: 12px;
-    width: 15px;
     height: 15px;
-    color: white;
-    font-size: 15px;
-    border-radius: 20%;
-    
 }
 
 .social-links a:hover {
@@ -70,23 +79,6 @@ body {
 
 .navbar-brand span {
     color: salmon;
-}
-
-.menu-wrapper .nav-link {
-    font-size: 16px;
-    font-family: 'Noto Sans', sans-serif;
-    font-weight: 700;
-    word-wrap: break-word;
-    color: #2E2E2E;
-}
-
-.menu-wrapper .nav-link:hover, 
-.menu-wrapper .nav-link:active {
-    color: rgb(0, 0, 0);
-}
-
-.menu-wrapper .active {
-    color: #DC0000 !important;
 }
 
 .carousel-indicators button {
@@ -140,7 +132,8 @@ body {
 
 .aboutus {
     color: #2E2E2E;
-    margin-top: 144px;
+    padding-top: 144px;
+    padding-bottom: 110px;
 }
 
 .aboutus h2 {
@@ -167,14 +160,9 @@ body {
     max-height: 364px;
 }
 
-.aboutus-child-img {
-    flex-basis: 50%;
-    margin-bottom: 110px;
-}
-
 .aboutus-child-img img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
 .aboutus-child .btn {
@@ -190,7 +178,7 @@ body {
 
 #services {
     color: white;
-    background: linear-gradient(rgba(13, 120, 191, 0.911),rgba(11, 148, 239, 0.976)), url(/images/world\ map.png) no-repeat;
+    background: linear-gradient(rgba(13, 120, 191, 0.911),rgba(11, 148, 239, 0.976)), url(../images/worldmap.png) no-repeat;
     padding-top: 134px;
     padding-bottom: 96px;
 }
@@ -200,12 +188,39 @@ body {
     text-align: center;
     background-color: white;
     color: black;
-    min-height: 340px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .custom-service h4 {
-    margin-top: 24px;
-    margin-bottom: 12px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+.custom-service p {
+    color: #2E2E2E;
+    font-size: 15px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 400;
+    line-height: 22.50px;
+    letter-spacing: 0.45px;
+    flex-grow: 1;
+}
+
+.custom-service a {
+    color: #DC0000;
+    font-size: 18px;
+    font-family: 'Noto Sans', sans-serif;
+    font-weight: 500;
+    text-decoration: unset !important;
+    margin-top: auto;
+}
+
+.custom-service img{
+    max-width: 50px;
+    height: auto;
 }
 
 .service {
@@ -236,11 +251,6 @@ body {
     font-weight: 500;
     text-decoration: underline;
     line-height: 30.60px;
-}
-
-.custom-service a {
-    color: #DC0000;
-    text-decoration: unset !important;
 }
 
 .partners {
@@ -285,7 +295,7 @@ body {
 }
 
 .contact-us {
-    background: url(/images/contact\ us.png) center/cover no-repeat;
+    background: url(../images/contactus.png) center/cover no-repeat;
     padding-top: 51px;
     padding-bottom: 86px;
 }
@@ -339,7 +349,7 @@ textarea {
 }
 
 .footer {
-    background: linear-gradient(rgba(1, 132, 220, 0.911),rgba(0, 110, 183, 0.976)), url(/images/world\ map.png) no-repeat center;
+    background: linear-gradient(rgba(1, 132, 220, 0.911),rgba(0, 110, 183, 0.976)), url(../images/worldmap.png) no-repeat center;
     color: white;
     font-family: 'Noto Sans', sans-serif;
     padding-top: 93px;
@@ -392,16 +402,17 @@ textarea {
     letter-spacing: 0.45px;
 }
 
-.footer-contactus img {
-    width: 20px;
-    height: 20px;
-
-}
-
 .footer .footer-copyright {
     color: white;
     font-size: 16px;
     font-family: 'Noto Sans', sans-serif;
     font-weight: 400;
     letter-spacing: 0.40px;
+}
+
+.footer-map, .footer-mail, .footer-phone {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
 }

@@ -1,47 +1,57 @@
 @media (250px <= width <= 449.98px) {
+
+    .calculator {
+        padding: 15px;
+        width: 100%;
+        max-width: 250px;
+    }
+
     .calculator form .calc-button, .clear-button, .del-button {
-        width: 40px;
-        height: 40px;
-        font-size: 13px;
+        width: 53px;
+        height: 53px;
+        font-size: 15px;
     }
 
     .calculator form .calc-equal-button {
-        width: 90px;
-        height: 40px;
-        font-size: 13px;
-        padding-top: 2px;
+        width: 116px;
+        height: 53px;
+        font-size: 15px;
+        padding-top: 1px;
     }
 
     .calculator form .calc-display {
-        width: 186px;
+        width: 240px;
         height: 65px;
         font-size: 25px;
     }
 
 }
 
-@media (100px <= width <= 249.98px) {
+@media (150px <= width <= 249.98px) {
     .calculator {
-        padding: 6px;
+        padding: 10px;
+        width: 100%;
+        max-width: 150px;
     }
     .calculator form .calc-button, .clear-button, .del-button {
-        width: 25px;
-        height: 25px;
-        font-size: 7px;
-        margin: 0px;
-    }
+        width: 32px;
+        height: 35px;
+        font-size: 8px;
+        margin: 1px;
+        padding: 0px;
+    } 
 
     .calculator form .calc-equal-button {
-        width: 52px;
-        height: 25px;
+        width: 70px;
+        height: 35px;
         font-size: 10px;
         padding-top: 0px;
         margin-left: 1px;
     }
 
     .calculator form .calc-display {
-        width: 104px;
-        height: 35px;
+        width: 140px;
+        height: 46px;
         font-size: 14px;
     }
 }

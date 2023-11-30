@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,500;1,300;1,500;1,600;1,700&display=swap');
+
+body {
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.container .nav-wrapper {
+    /* font-size: 18px;
+    font-weight: 600;
+    line-height: 24px; */
+    font-family: 'Open Sans', sans-serif;
+    display: flex;
+    justify-content: right !important;
+}
+
+
+.login-form .container button input {
+    max-width: 430px !important;
+    width: 100%;
+    height: 60px;
+}
+
+.login-form .container .row {
+    max-width: 430px;
+    width: 100%;
+    height: 60px;
+}
+/* 
+.login-form .container a {
+    display: flex;
+    justify-content: right !important;
+} */
+
+.nav-form-wrapper {
+    display: flex;
+    justify-content: right !important;
+}
+
+.nav-form-wrapper img {
+    width: 137px;
+    height: 45px;
+}
+
+.container-form  .row{
+    height: 100vh;
+    width: 548px;
+}
